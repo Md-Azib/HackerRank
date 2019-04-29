@@ -31,31 +31,16 @@ def merge(arr, first, last):
         k += 1
         i += 1
     while j < len(last):
-
         arr[k] = last[j]
+        #count += len(first) - i
         k += 1
         j += 1
-    #print(arr)
-    #print("Count is : {}".format(count))
-
-    # while k < len(first) + len(last) - 1:
-    #     print('in while loop')
-    #     #print(i, j, k)
-    #     print(first[i])
-    #     print(last[j])
-    #     if first[i] >= last[j] or j == len(last):
-    #         arr[k] = first[i]
-    #         i += 1
-    #     elif first[i] < last[j] or i == len(first):
-    #         count += len(first) - i
-    #         arr[k] = last[j]
-    #         j += 1
-    #     k += 1
-    #print(arr)
     return count
 
 
 n = int(input())
 arr = list(map(int, input().split()))
+
 count2 = mergeSort(arr, n)
+print(arr)
 print(count2)
